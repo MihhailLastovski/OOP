@@ -11,12 +11,11 @@ namespace OOP
         static void Main(string[] args)
         {
             Console.OutputEncoding = Encoding.UTF8;
-            Inimene human = new Inimene("Pariram", Emakeel.eesti);
-            Console.WriteLine(human.Emakeel);
-
-            human.Analitic();
-
-
+            Inimene human = new Inimene("Pariram", Emakeel.eesti,Sugu.naine);
+            human.Tervitame();
+            human.Palk = 1000;
+            double minutulu = human.Tulumaks();
+            Console.WriteLine("Minu tulumaks on: "+ minutulu);
             Inimene[] inimesed = new Inimene[3];
             for (int i = 0; i < 3; i++)
             {
@@ -31,15 +30,14 @@ namespace OOP
                 item.Tervitame();
             }
 
-
-            Inimene mees = new Inimene();
-            mees.Eesnimi = "Mati";
-            Console.WriteLine($"Ma olen {mees.Eesnimi}. Kui vana ma olen?");
-            mees.Vanus = int.Parse(Console.ReadLine());
-            mees.Tervitame();
-            Inimene naine = new Inimene("Mischel", Emakeel.rotsi);
-            naine.Tervitame();
-            Console.ReadKey(true);
+            //Inimene mees = new Inimene();
+            //mees.Eesnimi = "Mati";
+            //Console.WriteLine($"Ma olen {mees.Eesnimi}. Kui vana ma olen?");
+            //mees.Vanus = int.Parse(Console.ReadLine());
+            //mees.Tervitame();
+            //Inimene naine = new Inimene("Mischel", Emakeel.rotsi);
+            //naine.Tervitame();
+            //Console.ReadKey(true);
         }
 
     }
