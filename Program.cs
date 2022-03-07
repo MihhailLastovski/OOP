@@ -12,7 +12,7 @@ namespace OOP
         {
             
             Console.OutputEncoding = Encoding.UTF8;
-            Opilane o = new Opilane("Kati", "Kask", "Tarpv21");
+            Opilane o = new Opilane("Kati", "Kask", "TARpv21");
             o.Hinne = 4;
             o.Tervist();
             Console.WriteLine();
