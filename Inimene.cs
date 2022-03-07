@@ -8,12 +8,18 @@ namespace OOP
         int vanus;
         string pol;
         double rost;
+        string perenimi;
         string staatus;
         int palk;
 
         Emakeel emakeel;
         Sugu sugu;
         public Inimene() { }//конструктор
+        public Inimene(string Eesnimi, string Perenimi) 
+        {
+            eesnimi = Eesnimi;
+            perenimi = Perenimi;
+        }
         public Inimene(string Eesnimi, string Pol, double Rost)
         {
             eesnimi = Eesnimi;
@@ -38,6 +44,12 @@ namespace OOP
                 if (eesnimi == null) eesnimi = value;
             }
             get { return eesnimi; }
+        }
+        public string Perenimi {
+            set {
+                if (perenimi == null) perenimi = value;
+            }
+            get { return perenimi; }
         }
         public int Vanus {
             set {
