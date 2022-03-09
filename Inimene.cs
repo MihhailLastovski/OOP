@@ -2,7 +2,7 @@
 
 namespace OOP
 {
-    public class Inimene
+    public abstract class Inimene
     {
         string eesnimi;//поля
         int vanus;
@@ -19,6 +19,12 @@ namespace OOP
         {
             eesnimi = Eesnimi;
             perenimi = Perenimi;
+        }
+        public Inimene(string Eesnimi, string Perenimi, int Vanus)
+        {
+            eesnimi = Eesnimi;
+            perenimi = Perenimi;
+            vanus = vanus;
         }
         public Inimene(string Eesnimi, string Pol, double Rost)
         {
@@ -129,5 +135,6 @@ namespace OOP
             tulu = palk * 0.2;
             return tulu;
         }
+        public abstract void Kes_Ma_Olen();
     }
 }

@@ -12,6 +12,13 @@ namespace OOP
         {
             
             Console.OutputEncoding = Encoding.UTF8;
+            Inimene[] inim = new Inimene[4];
+            inim[0] = new Opetaja("LOGITgv20","Anna","Ivanovna",38);
+            inim[0].Kes_Ma_Olen();
+            Console.WriteLine();
+            inim[1] = new Opilane();
+            inim[1].Kes_Ma_Olen();
+            Console.WriteLine("\n");
             Opilane o = new Opilane("Kati", "Kask", "TARpv21");
             o.Hinne = 4;
             o.Tervist();

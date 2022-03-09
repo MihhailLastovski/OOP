@@ -88,5 +88,10 @@ namespace OOP
 
             
         }
+        public override void Kes_Ma_Olen()
+        {
+
+            Console.WriteLine("Ma olen õpilane!");
+        }
     }
 }
